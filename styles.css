@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+/* COMMON */
 html {
   font-size: 100%;
 }
@@ -13,11 +14,14 @@ html {
 a {
   text-decoration: none;
   color: #000;
+  all: unset;
 }
 
 ul {
   list-style-type: none;
 }
+
+/* Header */
 
 .header {
   position: relative;
