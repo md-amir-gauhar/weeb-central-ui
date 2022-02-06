@@ -190,20 +190,36 @@ ul {
 }
 
 .products {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   margin-top: 3rem;
   display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  place-items:  center;
+  grid-gap: 20px;
 }
 
 .product {
+  grid-column: span 2;
   width: 300px;
   height: 400px;
   border: 1px solid white;
   position: relative;
   overflow: hidden;
+}
+
+.product:last-child:nth-child(3n - 1) {
+  grid-column-end: -2;
+}
+
+.product:nth-last-child(2):nth-child(3n + 1) {
+  grid-column-end: 4;
+}
+
+/* Dealing with single orphan */
+
+.product:last-child:nth-child(3n - 2) {
+  grid-column-end: 5;
 }
 
 .product a {
@@ -213,7 +229,7 @@ ul {
   transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.9);
   color: #777;
-  padding: 1rem  1.5rem;
+  padding: 1rem 1.5rem;
   font-size: 1.3rem;
   font-family: 'Oswald', sans-serif;
   font-weight: 900;
@@ -230,15 +246,11 @@ ul {
   height: 100%;
   object-fit: cover;
   overflow: hidden;
-
   transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 }
 
 .product img:hover {
   transform: scale(1.1);
-}
-
-.product:hover {
 }
 
 /* .product-manga {
