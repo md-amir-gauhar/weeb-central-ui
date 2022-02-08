@@ -3,6 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
+:root {
+  --primary: #000;
+  --white: #fff;
+  --footer-bg: #172337;
+  --footer-primary: #737373;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,8 +27,9 @@ body {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--primary);
   all: unset;
+  cursor: pointer;
 }
 
 ul {
@@ -31,8 +39,7 @@ ul {
 /* Header */
 
 .header {
-  position: relative;
-  height: 10vh;
+  height: 75px;
   padding: 0 2rem 0 3rem;
   display: flex;
 }
@@ -40,9 +47,8 @@ ul {
 .header .logo-container {
   width: 300px;
   height: 10vh;
-  position: relative;
   top: 20%;
-  z-index: 999;
+  margin-top: 30px;
 }
 
 .header .logo-container > img {
@@ -100,8 +106,8 @@ ul {
 }
 
 .navbar__left .dropdown__items > li:hover {
-  background-color: #000;
-  color: white;
+  background-color: var(--primary);
+  color: var(--white);
 }
 
 .navbar__left .dropdown__items > li > a {
@@ -110,7 +116,7 @@ ul {
 }
 
 .navbar__left .dropdown__items > li > a:hover {
-  color: white;
+  color: var(--white);
 }
 
 .navbar__right {
@@ -136,7 +142,7 @@ ul {
 
 .navbar__right a.login:hover {
   background-color: #171717;
-  color: white;
+  color: var(--white);
   transform: scale(1.1);
 }
 
@@ -145,10 +151,10 @@ ul {
   font-weight: 600;
 }
 
-/* Banner */
+/*---------------------- Banner----------------------- */
+
 .main {
   width: 100%;
-  height: 90vh;
 }
 
 .main-text {
@@ -162,14 +168,14 @@ ul {
   width: 100%;
   background: url('https://cdn.shopify.com/s/files/1/1451/3260/t/7/assets/image_slider1.jpg?v=3096343081084966338');
   background-size: cover;
-  height: 80%;
+  height: 37rem;
   opacity: 0.8;
 }
 
 .product-list {
   padding: 2rem;
-  background-color: rgb(0, 0, 0);
-  color: white;
+  background-color: var(--primary);
+  color: var(--white);
 }
 
 .heading {
@@ -211,7 +217,7 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.9);
-  color: #777;
+  color: var(--footer-primary);
   padding: 1rem 1.5rem;
   font-size: 1.3rem;
   font-family: 'Oswald', sans-serif;
@@ -221,7 +227,7 @@ ul {
 
 .product a:hover {
   background-color: rgba(0, 0, 0, 0.7);
-  color: white;
+  color: var(--white);
 }
 
 .product img {
@@ -252,7 +258,7 @@ ul {
   height: 520px;
 }
 
-/* Trendings */
+/*------------------------ Trendings ---------------------*/
 .trendings {
   margin-top: 2rem;
 }
@@ -310,17 +316,65 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #000;
+  background-color: var(--primary);
   width: 2.8rem;
   border-radius: 3px;
-  color: white;
+  color: var(--white);
   padding: 5px 7px;
 }
 
 .fa-star {
   color: goldenrod;
 }
+/* ------------------ Footer ---------------------- */
 
+.footer {
+  background-color: var(--footer-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: var(--white);
+  font-family: Lato;
+}
+
+.footer-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--footer-primary);
+  padding: 3rem;
+}
+
+.footer-top > section {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 0.5rem;
+}
+
+.footer-top > section > a:hover {
+  text-decoration: underline;
+}
+
+.footer-top > section span {
+  color: var(--footer-primary);
+  font-size: 1.2rem;
+}
+
+.footer-top > section:last-child > a {
+  font-size: 1.5rem;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-family: Anton;
+}
 
 @media screen and (max-width: 800px) {
   html {
