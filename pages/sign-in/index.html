@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="signIn.css" />
+    <title>Weeb Central | Sign In</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <img
+          class="logo-img"
+          src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/160/6768798160_90eedaff-110c-4b1c-a07d-520cc08fdc5d.png?cb=1644045710"
+          alt="logo"
+        />
+      </div>
+      <nav class="navbar">
+        <div class="navbar__left">
+          <a href="./index.html">Home</a>
+          <div class="dropdown">
+            <a href="#">PRODUCTS <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown__items">
+              <li><a href="#">Manga</a></li>
+              <li><a href="#">Blu-rays</a></li>
+              <li><a href="#">Merchandise</a></li>
+              <li><a href="#">Accessories</a></li>
+            </ul>
+          </div>
+          <a href="#">About Us</a>
+        </div>
+        <div class="navbar__right">
+          <a href="#" class="login">LOGIN/SIGNUP</a>
+          <a href="#">
+            <i class="fal fa-heart"></i>
+            <span>Wishlist</span>
+          </a>
+          <a href="#">
+            <i class="far fa-shopping-bag"></i>
+            <span>Bag</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main class="sign-in-and-sign-up">
+      <section class="sign-in">
+        <h2 class="title">I already have an account</h2>
+        <span>Sign in with your email and password</span>
+        <form>
+          <div class="email">
+            <label class="label email-label">Email</label>
+            <input type="email" name="email" />
+          </div>
+          <div class="password">
+            <label class="label pwd-label">Password</label>
+            <input type="password" name="pwd" />
+          </div>
+          <div class="buttons">
+            <button>Sign In</button>
+            <button class="google-sign-in">Sign In with Google</button>
+          </div>
+        </form>
+      </section>
+      <section class="sign-up">
+        <h2 class="title">I do not have an account</h2>
+        <span>Sign up with your email and password</span>
+        <form>
+          <div class="username">
+            <label class="label username-label">Username</label>
+            <input type="text" name="username" />
+          </div>
+          <div class="email">
+            <label class="label email-label">Email</label>
+            <input type="email" name="email" />
+          </div>
+          <div class="password">
+            <label class="label pwd-label">Password</label>
+            <input type="password" name="pwd" />
+          </div>
+          <div class="confirm-password">
+            <label class="label pwd-label">Confirm Password</label>
+            <input type="password" name="cnf-pwd" />
+          </div>
+          <div class="buttons">
+            <button>Sign up</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+  <script src="index.js"></script>
+</html>

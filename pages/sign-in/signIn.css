@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --sub-color: grey;
+  --main-color: black;
+  --primary: white;
+  --blue-primary: #4285f4;
+  --blue-secondary: #357ae8;
+}
+
+.header {
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.sign-in-and-sign-up {
+  width: 850px;
+  display: flex;
+  justify-content: space-between;
+  margin: 70px auto;
+  font-family: 'Playfair Display', serif;
+}
+
+.sign-in,
+.sign-up {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin: 10px 0;
+  color: var(--main-color);
+  font-weight: 500;
+}
+
+.email,
+.password,
+.username,
+.confirm-password {
+  position: relative;
+  margin: 45px 0;
+}
+
+input {
+  background: none;
+  background-color: var(--primary);
+  color: var(--sub-color);
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--sub-color);
+  margin: 25px 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+.label {
+  color: var(--sub-color);
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 300ms ease all;
+}
+
+.shrink {
+  top: -14px;
+  font-size: 12px;
+  color: var(--main-color);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons button {
+  min-width: 165px;
+  width: auto;
+  height: 50px;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+  padding: 0 35px 0 35px;
+  font-size: 15px;
+  background-color: var(--main-color);
+  color: var(--primary);
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed';
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons button:hover {
+  background-color: var(--primary);
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+.buttons button.google-sign-in {
+  background-color: var(--blue-primary);
+  color: var(--primary);
+}
+
+.buttons button.google-sign-in:hover {
+  background-color: var(--blue-secondary);
+  border: none;
+}
