@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
 
 * {
   margin: 0;
@@ -14,16 +14,12 @@
   --blue-secondary: #357ae8;
 }
 
-.header {
-  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-}
-
 .sign-in-and-sign-up {
   width: 850px;
   display: flex;
   justify-content: space-between;
   margin: 70px auto;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .sign-in,
@@ -51,7 +47,7 @@ input {
   background: none;
   background-color: var(--primary);
   color: var(--sub-color);
-  font-size: 18px;
+  font-size: 1rem;
   padding: 10px 10px 10px 5px;
   display: block;
   width: 100%;
@@ -59,6 +55,7 @@ input {
   border-radius: 0;
   border-bottom: 1px solid var(--sub-color);
   margin: 25px 0;
+  font-style: inherit;
 }
 
 input:focus {
@@ -67,7 +64,7 @@ input:focus {
 
 .label {
   color: var(--sub-color);
-  font-size: 16px;
+  font-size: 1.2rem;
   font-weight: normal;
   position: absolute;
   pointer-events: none;

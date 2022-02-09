@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+
+:root {
+  --sub-color: grey;
+  --main-color: black;
+  --primary: white;
+}
+
+.wishlist-container {
+  width: 90%;
+  margin: 5rem auto;
+  padding: 1rem;
+}
+
+.wishlists {
+  margin: 2rem 0 2rem 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.wishlist {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  min-width: 250px;
+  width: 250px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  position: relative;
+}
+
+.wishlist img {
+  width: 100%;
+  height: 270px;
+  object-fit: contain;
+}
+
+.wishlist > .details {
+  width: 100%;
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 400;
+  color: var(--sub-color);
+}
+
+.wishlist > .details > .details-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wishlist > button:first-of-type {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px 5px 0 0;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.01);
+  font-size: 1.2rem;
+  border: .5px solid var(--sub-color);
+  color: var(--sub-color);
+  cursor: pointer;
+}
+
+.wishlist > button:last-child {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: transparent;
+  font-family: Oswald;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: none;
+  border-top: 1px solid var(--sub-color);
+  cursor: pointer;
+}
