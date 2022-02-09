@@ -28,9 +28,9 @@
   font-weight: 700;
   min-width: 250px;
   width: 250px;
-  /* margin-right: 2rem; */
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  position: relative;
 }
 
 .wishlist img {
@@ -55,7 +55,22 @@
   justify-content: space-between;
 }
 
-.wishlist > button {
+.wishlist > button:first-of-type {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px 5px 0 0;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.01);
+  font-size: 1.2rem;
+  border: .5px solid var(--sub-color);
+  color: var(--sub-color);
+  cursor: pointer;
+}
+
+.wishlist > button:last-child {
   width: 100%;
   padding: 0.5rem;
   background-color: transparent;
@@ -64,5 +79,5 @@
   font-weight: 500;
   border: none;
   border-top: 1px solid var(--sub-color);
-
+  cursor: pointer;
 }
