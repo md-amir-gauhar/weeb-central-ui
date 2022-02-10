@@ -4,10 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 :root {
-  --primary: #000;
+  --black: #000;
   --white: #fff;
   --footer-bg: #172337;
-  --footer-primary: #737373;
+  --gray: #737373;
 }
 
 * {
@@ -27,7 +27,7 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--primary);
+  color: var(--black);
   all: unset;
   cursor: pointer;
 }
@@ -87,7 +87,7 @@ ul {
   position: absolute;
   display: none;
   top: 7vh;
-  background-color: #f5f5f5;
+  background-color: var(--white);
   z-index: 999999;
   width: 300px;
 }
@@ -97,7 +97,7 @@ ul {
 }
 
 .navbar__left a:hover {
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid var(--black);
 }
 
 .navbar__left .dropdown__items > li {
@@ -107,7 +107,7 @@ ul {
 }
 
 .navbar__left .dropdown__items > li:hover {
-  background-color: var(--primary);
+  background-color: var(--black);
   color: var(--white);
 }
 
@@ -138,11 +138,11 @@ ul {
 .navbar__right a.login {
   padding: 1rem;
   font-size: 1rem;
-  border: 0.1px solid #737373;
+  border: 0.1px solid var(--gray);
 }
 
 .navbar__right a.login:hover {
-  background-color: #171717;
+  background-color: var(--black);
   color: var(--white);
   transform: scale(1.1);
 }
@@ -151,7 +151,6 @@ ul {
   font-size: 1rem;
   font-weight: 600;
 }
-
 /*---------------------- Banner----------------------- */
 
 .main {
@@ -174,7 +173,7 @@ ul {
 
 .product-list {
   padding: 2rem;
-  background-color: var(--primary);
+  background-color: var(--black);
   color: var(--white);
 }
 
@@ -192,7 +191,7 @@ ul {
 
 .line {
   height: 0.05rem;
-  background-color: #fff;
+  background-color: var(--white);
   width: 30%;
 }
 
@@ -217,7 +216,7 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.9);
-  color: var(--footer-primary);
+  color: var(--gray);
   padding: 1rem 1.5rem;
   font-size: 1.3rem;
   font-family: 'Oswald', sans-serif;
@@ -318,7 +317,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--primary);
+  background-color: var(--black);
   width: 4rem;
   border-radius: 3px;
   color: var(--white);
@@ -345,7 +344,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-bottom: 1px solid var(--footer-primary);
+  border-bottom: 1px solid var(--gray);
   padding: 3rem;
 }
 
@@ -361,7 +360,7 @@ ul {
 }
 
 .footer-top > section span {
-  color: var(--footer-primary);
+  color: var(--gray);
   font-size: 1.2rem;
 }
 
