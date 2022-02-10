@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
 
 :root {
-  --sub-color: grey;
-  --main-color: black;
-  --primary: white;
+  --gray: grey;
+  --black: black;
+  --white: white;
 }
 
 .wishlist-container {
@@ -46,7 +46,7 @@
   flex-direction: column;
   gap: 10px;
   font-weight: 400;
-  color: var(--sub-color);
+  color: var(--gray);
 }
 
 .wishlist > .details > .details-bottom {
@@ -65,8 +65,8 @@
   border-radius: 100%;
   background-color: rgba(0, 0, 0, 0.01);
   font-size: 1.2rem;
-  border: .5px solid var(--sub-color);
-  color: var(--sub-color);
+  border: .5px solid var(--gray);
+  color: var(--gray);
   cursor: pointer;
 }
 
@@ -78,6 +78,6 @@
   font-size: 1.5rem;
   font-weight: 500;
   border: none;
-  border-top: 1px solid var(--sub-color);
+  border-top: 1px solid var(--gray);
   cursor: pointer;
 }

@@ -2,8 +2,8 @@
 
 :root {
   --sub-color: rgb(100, 99, 99);
-  --main-color: black;
-  --primary: white;
+  --black: black;
+  --white: white;
 }
 
 .checkout-container {
@@ -65,7 +65,7 @@
   background-color: transparent;
   text-transform: capitalize;
   padding: 0.625rem 1rem;
-  color: var(--main-color);
+  color: var(--black);
   font-family: Oswald;
   font-size: 1.1rem;
   border: 1px solid var(--sub-color);
@@ -77,8 +77,8 @@
 .card-details .buttons button:hover,
 .coupons button:hover,
 .payment-checkout button:hover {
-  background-color: var(--main-color);
-  color: var(--primary);
+  background-color: var(--black);
+  color: var(--white);
   cursor: pointer;
   transform: scale(1.1);
 }
@@ -112,7 +112,7 @@
 .card-details .quantity {
   display: flex;
   align-items: center;
-  color: var(--main-color);
+  color: var(--black);
 }
 
 .card-details .quantity button {
@@ -131,7 +131,7 @@
 
 .card-details .quantity .amount {
   font-size: 1.5rem;
-  color: var(--main-color);
+  color: var(--black);
 }
 
 .card-details .buttons {
