@@ -291,6 +291,8 @@ ul {
   width: 200px;
   margin-right: 2rem;
   transition: transform 450ms;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 
 .manga-card img {
@@ -301,7 +303,7 @@ ul {
 
 .manga-card > .details {
   width: 100%;
-  padding: 0.5rem .5rem 1rem .5rem;
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
   display: flex;
   flex-direction: column;
   gap: 10px;
